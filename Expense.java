@@ -1,0 +1,36 @@
+import java.time.LocalDate;
+
+public class Expense{
+  private String title;
+  private double amount;
+  private String category;
+  private LocalDate date;
+
+  Expense(String title,double amount,String category,LocalDate date){
+    this.amount=amount;
+    this.title=title;
+    this.category=category;
+    this.date=date;
+  }
+  public String getTitle() {
+    return title;
+  }
+
+  public double getAmount() {
+    return amount;
+  }
+
+  public String getCategory() {
+    return category;
+  }
+
+  public LocalDate getDate() {
+    return date;
+  }
+
+  public String toString() {
+    return date + " | " + category + " | " + title + " | " + amount;
+  }
+  
+
+}
